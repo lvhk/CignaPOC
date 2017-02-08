@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		772827AA1E4B2BA900356B29 /* GOTNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772827A91E4B2BA900356B29 /* GOTNetworkController.swift */; };
+		772827AB1E4B2BA900356B29 /* GOTNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772827A91E4B2BA900356B29 /* GOTNetworkController.swift */; };
+		772827AC1E4B2BA900356B29 /* GOTNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772827A91E4B2BA900356B29 /* GOTNetworkController.swift */; };
+		772827AF1E4B2EAF00356B29 /* GOTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772827AE1E4B2EAF00356B29 /* GOTConstants.swift */; };
+		772827B01E4B2EAF00356B29 /* GOTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772827AE1E4B2EAF00356B29 /* GOTConstants.swift */; };
+		772827B11E4B2EAF00356B29 /* GOTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772827AE1E4B2EAF00356B29 /* GOTConstants.swift */; };
+		772827B41E4B465D00356B29 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772827B31E4B465D00356B29 /* Episode.swift */; };
+		772827B51E4B465D00356B29 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772827B31E4B465D00356B29 /* Episode.swift */; };
+		772827B61E4B465D00356B29 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772827B31E4B465D00356B29 /* Episode.swift */; };
+		772827BC1E4B5F2500356B29 /* GOTUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772827BB1E4B5F2500356B29 /* GOTUtils.swift */; };
+		772827BD1E4B5F2500356B29 /* GOTUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772827BB1E4B5F2500356B29 /* GOTUtils.swift */; };
+		772827BE1E4B5F2500356B29 /* GOTUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772827BB1E4B5F2500356B29 /* GOTUtils.swift */; };
+		772827C01E4B829A00356B29 /* EpisodeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772827BF1E4B829A00356B29 /* EpisodeDetails.swift */; };
+		772827C11E4B829A00356B29 /* EpisodeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772827BF1E4B829A00356B29 /* EpisodeDetails.swift */; };
+		772827C21E4B829A00356B29 /* EpisodeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772827BF1E4B829A00356B29 /* EpisodeDetails.swift */; };
 		77A3E4C51E4AEF8B001516FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E4C41E4AEF8B001516FF /* AppDelegate.swift */; };
 		77A3E4C71E4AEF8B001516FF /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E4C61E4AEF8B001516FF /* MasterViewController.swift */; };
 		77A3E4C91E4AEF8B001516FF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E4C81E4AEF8B001516FF /* DetailViewController.swift */; };
@@ -35,6 +50,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		772827A91E4B2BA900356B29 /* GOTNetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOTNetworkController.swift; sourceTree = "<group>"; };
+		772827AE1E4B2EAF00356B29 /* GOTConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOTConstants.swift; sourceTree = "<group>"; };
+		772827B31E4B465D00356B29 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		772827BB1E4B5F2500356B29 /* GOTUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOTUtils.swift; sourceTree = "<group>"; };
+		772827BF1E4B829A00356B29 /* EpisodeDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeDetails.swift; sourceTree = "<group>"; };
 		77A3E4C11E4AEF8B001516FF /* GOT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GOT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77A3E4C41E4AEF8B001516FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77A3E4C61E4AEF8B001516FF /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +96,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		772827A81E4B2B8800356B29 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				772827A91E4B2BA900356B29 /* GOTNetworkController.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		772827AD1E4B2E4400356B29 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				772827AE1E4B2EAF00356B29 /* GOTConstants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		772827B21E4B461800356B29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				772827B31E4B465D00356B29 /* Episode.swift */,
+				772827BF1E4B829A00356B29 /* EpisodeDetails.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		772827B71E4B4EFC00356B29 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				77A3E4C61E4AEF8B001516FF /* MasterViewController.swift */,
+				77A3E4C81E4AEF8B001516FF /* DetailViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		772827B81E4B4F2700356B29 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				77A3E4C41E4AEF8B001516FF /* AppDelegate.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		772827B91E4B4F3000356B29 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				77A3E4D21E4AEF8B001516FF /* Info.plist */,
+				77A3E4CA1E4AEF8B001516FF /* Main.storyboard */,
+				77A3E4CD1E4AEF8B001516FF /* Assets.xcassets */,
+				77A3E4CF1E4AEF8B001516FF /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		772827BA1E4B5F0400356B29 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				772827BB1E4B5F2500356B29 /* GOTUtils.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		77A3E4B81E4AEF8B001516FF = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +180,13 @@
 		77A3E4C31E4AEF8B001516FF /* GOT */ = {
 			isa = PBXGroup;
 			children = (
-				77A3E4C41E4AEF8B001516FF /* AppDelegate.swift */,
-				77A3E4C61E4AEF8B001516FF /* MasterViewController.swift */,
-				77A3E4C81E4AEF8B001516FF /* DetailViewController.swift */,
-				77A3E4CA1E4AEF8B001516FF /* Main.storyboard */,
-				77A3E4CD1E4AEF8B001516FF /* Assets.xcassets */,
-				77A3E4CF1E4AEF8B001516FF /* LaunchScreen.storyboard */,
-				77A3E4D21E4AEF8B001516FF /* Info.plist */,
+				772827BA1E4B5F0400356B29 /* Utils */,
+				772827B81E4B4F2700356B29 /* Main */,
+				772827B71E4B4EFC00356B29 /* ViewControllers */,
+				772827B21E4B461800356B29 /* Model */,
+				772827AD1E4B2E4400356B29 /* Constants */,
+				772827A81E4B2B8800356B29 /* Network */,
+				772827B91E4B4F3000356B29 /* Resources */,
 			);
 			path = GOT;
 			sourceTree = "<group>";
@@ -263,7 +344,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				77A3E4C91E4AEF8B001516FF /* DetailViewController.swift in Sources */,
+				772827B41E4B465D00356B29 /* Episode.swift in Sources */,
+				772827AF1E4B2EAF00356B29 /* GOTConstants.swift in Sources */,
+				772827AA1E4B2BA900356B29 /* GOTNetworkController.swift in Sources */,
 				77A3E4C71E4AEF8B001516FF /* MasterViewController.swift in Sources */,
+				772827BC1E4B5F2500356B29 /* GOTUtils.swift in Sources */,
+				772827C01E4B829A00356B29 /* EpisodeDetails.swift in Sources */,
 				77A3E4C51E4AEF8B001516FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +359,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				77A3E4DC1E4AEF8B001516FF /* GOTTests.swift in Sources */,
+				772827B51E4B465D00356B29 /* Episode.swift in Sources */,
+				772827C11E4B829A00356B29 /* EpisodeDetails.swift in Sources */,
+				772827B01E4B2EAF00356B29 /* GOTConstants.swift in Sources */,
+				772827AB1E4B2BA900356B29 /* GOTNetworkController.swift in Sources */,
+				772827BD1E4B5F2500356B29 /* GOTUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +372,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				77A3E4E71E4AEF8B001516FF /* GOTUITests.swift in Sources */,
+				772827B61E4B465D00356B29 /* Episode.swift in Sources */,
+				772827C21E4B829A00356B29 /* EpisodeDetails.swift in Sources */,
+				772827B11E4B2EAF00356B29 /* GOTConstants.swift in Sources */,
+				772827AC1E4B2BA900356B29 /* GOTNetworkController.swift in Sources */,
+				772827BE1E4B5F2500356B29 /* GOTUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +605,7 @@
 				77A3E4ED1E4AEF8B001516FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77A3E4EE1E4AEF8B001516FF /* Build configuration list for PBXNativeTarget "GOTTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +614,7 @@
 				77A3E4F01E4AEF8B001516FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77A3E4F11E4AEF8B001516FF /* Build configuration list for PBXNativeTarget "GOTUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +623,7 @@
 				77A3E4F31E4AEF8B001516FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

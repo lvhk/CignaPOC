@@ -17,7 +17,7 @@ class DetailViewController: UIViewController {
         // Update the user interface for the detail item.
         if let detail = self.detailItem {
             if let label = self.detailDescriptionLabel {
-                label.text = detail.description
+                label.text = detail.title
             }
         }
     }
@@ -26,6 +26,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
+        self.loadEpisodeDetails()
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,13 +34,21 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    var detailItem: NSDate? {
+    var detailItem: Episode? {
         didSet {
             // Update the view.
             self.configureView()
         }
     }
-
-
+    
+    func loadEpisodeDetails() {
+        GOTNetworkController.sharedInstance.getEpsodeDetails(imdbID: (self.detailItem?.imdbID)!, complete: { (episodeDetails) in
+            
+            print(episodeDetails)
+            
+        }) { (error) in
+            self.showAlert(title: "Error", message: error.localizedDescription)
+        }
+    }
 }
 

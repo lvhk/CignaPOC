@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GOT/MasterViewController.swift"
-            timestampString = "508321487.589213"
+            timestampString = "508329559.44534"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
             landmarkName = "showSeasonsAction(_:)"
             landmarkType = "7">
          </BreakpointContent>

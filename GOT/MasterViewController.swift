@@ -14,7 +14,7 @@ class MasterViewController: UITableViewController, UIActionSheetDelegate {
     var objects = [Any]()
     var seasonEpisodesArray : [Episode]?
     var seasonsSelectedIndex : Int = 1
-    
+    var progressHUD : ProgressHUD?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class MasterViewController: UITableViewController, UIActionSheetDelegate {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
-        
+        self.setLoadingIndicator()
         self.loadData(forIndex: 1)
     }
     
@@ -109,10 +109,15 @@ class MasterViewController: UITableViewController, UIActionSheetDelegate {
     // MARK: - Data
     
     func loadData(forIndex index:Int) {
+        
+        self.showIndicator(show: true, progressHUD: self.progressHUD!)
+        
         GOTNetworkController.sharedInstance.getSeasonEpsodes(season: index, complete: { (seasonData) in
             self.seasonEpisodesArray = seasonData
             self.reloadTableview()
+            self.showIndicator(show: false, progressHUD: self.progressHUD!)
         }) { (error) in
+            self.showIndicator(show: false, progressHUD: self.progressHUD!)
             self.showAlert(title: "Error", message: error.localizedDescription)
         }
     }
@@ -155,6 +160,12 @@ class MasterViewController: UITableViewController, UIActionSheetDelegate {
         self.present(alertController, animated: true, completion: {
             print("completion block")
         })
+    }
+    
+    func setLoadingIndicator() {
+        //setup loading indicator
+        progressHUD = ProgressHUD(text: "Loading...")
+        self.view.addSubview(progressHUD!)
     }
 }
 

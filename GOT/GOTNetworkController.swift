@@ -63,7 +63,7 @@ class GOTNetworkController: NSObject {
             return
         }
         
-         let url = URL(string: GOTConstants.kEpisodeDetailsURL.replacingOccurrences(of: "@@@@@", with: imdbID))
+        let url = URL(string: GOTConstants.kEpisodeDetailsURL.replacingOccurrences(of: "@@@@@", with: imdbID))
         
         self.fireRequest(url: url!, success: { (data) in
             // parse the result as JSON, since that's what the API provides
@@ -78,8 +78,8 @@ class GOTNetworkController: NSObject {
                 
                 let episodeDetails = EpisodeDetails(year: json.object(forKey: "Year") as! String, rating: json.object(forKey: "Rated") as! String, releaseDate: json.object(forKey: "Released") as! String, season: json.object(forKey: "Season") as! String, episodeNumber: json.object(forKey: "Episode") as! String, duration: json.object(forKey: "Runtime") as! String)
                 
-                    GOTUtils.sharedInstance.hideNetworkActivityIndicator()
-                    success(episodeDetails)
+                GOTUtils.sharedInstance.hideNetworkActivityIndicator()
+                success(episodeDetails)
                 
             } catch  {
                 GOTUtils.sharedInstance.hideNetworkActivityIndicator()

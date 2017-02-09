@@ -48,9 +48,6 @@ class MasterViewController: UITableViewController, UIActionSheetDelegate {
                 let episode = self.seasonEpisodesArray![indexPath.row]
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
                 controller.detailItem = episode
-//                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
-//                controller.navigationItem.leftItemsSupplementBackButton = true
-//                controller.navigationItem.leftBarButtonItem?.tintColor = UIColor.white
             }
         }
     }
@@ -89,10 +86,6 @@ class MasterViewController: UITableViewController, UIActionSheetDelegate {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
     }
-    
-    //    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-    //        return "Season \(section)"
-    //    }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
@@ -146,7 +139,6 @@ class MasterViewController: UITableViewController, UIActionSheetDelegate {
         let alertController = UIAlertController(title: "Seasons", message: "Please Select a Season", preferredStyle: .actionSheet)
         alertController.view.tintColor = UIColor(colorLiteralRed: 30/255, green: 81/255, blue: 135/255, alpha: 1)
         
-        
         for name in GOTConstants.seasonTitles {
             
             let action = UIAlertAction(title: name, style: .default, handler: {
@@ -164,7 +156,6 @@ class MasterViewController: UITableViewController, UIActionSheetDelegate {
             print("completion block")
         })
     }
-    
 }
 
 extension UIViewController {

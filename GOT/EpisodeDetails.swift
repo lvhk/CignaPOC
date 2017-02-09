@@ -9,7 +9,7 @@
 import UIKit
 
 class EpisodeDetails: NSObject {
-
+    
     var year: String?
     var rating: String?
     var releaseDate: String?

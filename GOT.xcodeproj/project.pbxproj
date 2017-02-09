@@ -22,6 +22,9 @@
 		772827C01E4B829A00356B29 /* EpisodeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772827BF1E4B829A00356B29 /* EpisodeDetails.swift */; };
 		772827C11E4B829A00356B29 /* EpisodeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772827BF1E4B829A00356B29 /* EpisodeDetails.swift */; };
 		772827C21E4B829A00356B29 /* EpisodeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772827BF1E4B829A00356B29 /* EpisodeDetails.swift */; };
+		772827C41E4C50D600356B29 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772827C31E4C50D500356B29 /* ProgressHUD.swift */; };
+		772827C51E4C50D600356B29 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772827C31E4C50D500356B29 /* ProgressHUD.swift */; };
+		772827C61E4C50D600356B29 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772827C31E4C50D500356B29 /* ProgressHUD.swift */; };
 		77A3E4C51E4AEF8B001516FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E4C41E4AEF8B001516FF /* AppDelegate.swift */; };
 		77A3E4C71E4AEF8B001516FF /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E4C61E4AEF8B001516FF /* MasterViewController.swift */; };
 		77A3E4C91E4AEF8B001516FF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E4C81E4AEF8B001516FF /* DetailViewController.swift */; };
@@ -55,6 +58,7 @@
 		772827B31E4B465D00356B29 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		772827BB1E4B5F2500356B29 /* GOTUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOTUtils.swift; sourceTree = "<group>"; };
 		772827BF1E4B829A00356B29 /* EpisodeDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeDetails.swift; sourceTree = "<group>"; };
+		772827C31E4C50D500356B29 /* ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
 		77A3E4C11E4AEF8B001516FF /* GOT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GOT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77A3E4C41E4AEF8B001516FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77A3E4C61E4AEF8B001516FF /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				772827BB1E4B5F2500356B29 /* GOTUtils.swift */,
+				772827C31E4C50D500356B29 /* ProgressHUD.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -345,6 +350,7 @@
 			files = (
 				77A3E4C91E4AEF8B001516FF /* DetailViewController.swift in Sources */,
 				772827B41E4B465D00356B29 /* Episode.swift in Sources */,
+				772827C41E4C50D600356B29 /* ProgressHUD.swift in Sources */,
 				772827AF1E4B2EAF00356B29 /* GOTConstants.swift in Sources */,
 				772827AA1E4B2BA900356B29 /* GOTNetworkController.swift in Sources */,
 				77A3E4C71E4AEF8B001516FF /* MasterViewController.swift in Sources */,
@@ -364,6 +370,7 @@
 				772827B01E4B2EAF00356B29 /* GOTConstants.swift in Sources */,
 				772827AB1E4B2BA900356B29 /* GOTNetworkController.swift in Sources */,
 				772827BD1E4B5F2500356B29 /* GOTUtils.swift in Sources */,
+				772827C51E4C50D600356B29 /* ProgressHUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +384,7 @@
 				772827B11E4B2EAF00356B29 /* GOTConstants.swift in Sources */,
 				772827AC1E4B2BA900356B29 /* GOTNetworkController.swift in Sources */,
 				772827BE1E4B5F2500356B29 /* GOTUtils.swift in Sources */,
+				772827C61E4C50D600356B29 /* ProgressHUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

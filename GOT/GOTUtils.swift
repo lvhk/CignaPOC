@@ -18,7 +18,7 @@ class GOTUtils: NSObject {
             UIApplication.shared.isNetworkActivityIndicatorVisible = true
         }
     }
-
+    
     func hideNetworkActivityIndicator (){
         DispatchQueue.main.async {
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
